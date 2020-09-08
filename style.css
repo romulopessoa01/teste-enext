@@ -1,0 +1,161 @@
+body {
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  color: whitesmoke;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: whitesmoke;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+a {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+p {
+  color: whitesmoke;
+  opacity: 0.7;
+}
+
+.write p {
+  font-size: 28px;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+}
+
+.container {
+  width: fit-content;
+  margin: auto;
+  display: block;
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.banner {
+  background-image: linear-gradient(
+      rgba(0.6, 0.6, 0.6, 0.6),
+      rgba(0.6, 0.6, 0.6, 0.6)
+    ),
+    url('images/background.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  background-clip: padding-box;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.banner p {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.button-purple {
+  background-color: darkslateblue;
+  color: white;
+  padding: 16px 48px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button-purple:hover {
+  background-color: #ba9987;
+  color: #242528;
+}
+
+.cards {
+  background: #242528;
+  box-shadow: 0 0 16px rgba(110, 110, 110, 0.15);
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  padding: 24px;
+  margin: 8px;
+}
+
+.cards img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.cards h3 {
+  margin-bottom: 0;
+}
+
+.cards p {
+  text-align: center;
+}
+
+.cards:hover {
+  background-color: #404042;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin-bottom: 24px;
+}
+
+.footer {
+  background: #404042;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.footer p {
+  color: white;
+}
+
+@media (max-width: 1280px) {
+  .flex {
+    grid-template-columns: 1fr;
+  }
+
+  .cards {
+    width: auto;
+  }
+}
+
+@media (min-width: 375px) {
+  .container {
+    width: 275px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1080px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1080px;
+  }
+}
